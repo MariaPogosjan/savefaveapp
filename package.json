@@ -1,0 +1,11 @@
+{
+  "name": "save-fave-app",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "npm install --prefix backend"
+  },
+  "dependencies": {
+    "create-react-app": "^5.0.1",
+    "frontend": "^2.0.0-alpha.4"
+  }
+}
