@@ -2,7 +2,7 @@
 const App = () => {
   return (
     <div>
-      SaveFave är bäst
+      SaveFave är är bäst
     </div>
   );
 }
