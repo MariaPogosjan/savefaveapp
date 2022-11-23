@@ -1,0 +1,92 @@
+$font-main: 'Rubik', sans-serif;
+
+/// Fluid font size
+$ffs-base-font-size: 16px !default;
+$ffs-min-vw: 375px !default;
+$ffs-max-vw: 2560px !default;
+
+// Font weights
+$font-weight-regular: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 600;
+
+/// Map of font-sizes.
+/// @see {mixin} fluid-font-size
+/// @type Map
+/// @see {function} ffs-scale
+
+/// Headings
+$heading-line-height: 1.1;
+$heading-font-weight: 600; /// Medium
+
+$mega-font-sizes: (
+    'min': 48px,
+    'max': 150px,
+    // 120 @ 1920
+);
+$h1-font-sizes: (
+    'min': 40px,
+    'max': 74px,
+    // 64 @ 1920
+);
+$h2-font-sizes: (
+    'min': 24px,
+    'max': 58px,
+    // 48 @ 1920
+);
+$h3-font-sizes: (
+    'min': 20px,
+    'max': 32px,
+    // 28 @ 1920
+);
+$h4-font-sizes: (
+    'min': 16px,
+    'max': 22px,
+    // 20 @ 1920
+);
+$h5-font-sizes: (
+    'min': 14px,
+    'max': 20px,
+    // 18 @ 1920
+);
+$h6-font-sizes: (
+    'min': 12px,
+    'max': 18px,
+    // 16 @ 1920
+);
+
+
+/// Text
+$text-line-height: 1.5;
+$text-line-height--preamble: 1.35;
+$text-font-weight: 300; /// Normal
+
+$preamble-font-sizes: (
+    'min': 18px,
+    'max': 24px,
+    // 22 @ 1920
+);
+
+$body-font-sizes: (
+    'min': 16px,
+    'max': 19px,
+    // 18 @ 1920
+);
+$small-font-sizes: (
+    'min': 14px,
+    'max': 18px,
+    // 16 @ 1920
+);
+$extra-small-font-sizes: (
+    'min': 14px,
+    'max': 14px,
+);
+
+
+/// Buttons
+$button-font-weight: 400; // Medium
+
+$button-font-sizes: (
+    'min': 16px,
+    'max': 16px,
+);
