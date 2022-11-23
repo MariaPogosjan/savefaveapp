@@ -1,0 +1,88 @@
+// Color definitions
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Colors 
+$color-dark: #0e0e11;
+$background-color-purple: #C2AED7;
+
+// Accent colors 
+$acccent-color-dark: #18181c;
+$acccent-color-dark-purple: #8e6bff;
+
+// Sizes
+$column-width-standard: 1920px;
+$column-width-narrow: 1460px;
+$column-width-small: 800px;
+
+// Breakpoints
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 768px;
+$breakpoint-tablet-large: 1024px;
+$breakpoint-desktop-small: 1100px;
+$breakpoint-desktop: 1280px;
+$breakpoint-mega: 1440px;
+$breakpoint-huge: 1920px;
+
+$edge-padding-desktop: 30px;
+$edge-padding-mobile: 20px;
+
+$vertical-block-margin-desktop: 100px;
+$vertical-block-margin-mobile: 80px;
+
+// Mixins
+@mixin fluid-font-size($fs-map) {
+    font-size: ffs-scale(map-get($fs-map, 'min'), map-get($fs-map, 'max'));
+}
+
+@mixin block-padding-standard {
+    padding-left: 120px;
+    padding-right: 120px;
+
+    @media (max-width: $breakpoint-tablet-large) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        padding-left: $edge-padding-mobile;
+        padding-right: $edge-padding-mobile;
+    }
+}
+
+
+@mixin block-padding-focus-section {
+    padding-left: 120px - $edge-padding-desktop;
+    padding-right: 120px - $edge-padding-desktop;
+
+    @media (max-width: $breakpoint-tablet-large) {
+        padding-left: 80px - $edge-padding-mobile;
+        padding-right: 80px - $edge-padding-mobile;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        padding-left: $edge-padding-mobile;
+        padding-right: $edge-padding-mobile;
+    }
+}
+
+@mixin block-padding-full-width {
+    padding-left: $edge-padding-desktop;
+    padding-right: $edge-padding-desktop;
+
+    @media (max-width: $breakpoint-tablet-large) {
+        padding-left: $edge-padding-mobile;
+        padding-right: $edge-padding-mobile;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        padding-left: $edge-padding-mobile;
+        padding-right: $edge-padding-mobile;
+    }
+}
+
+@mixin block-padding-none {
+    padding-left: 0;
+    padding-right: 0;
+}
+

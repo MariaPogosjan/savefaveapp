@@ -1,13 +1,97 @@
+@import './variables';
+@import './typography';
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: $color-black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  background-color: red;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html { height: 100%; }
+body { min-height: 100%; }
+
+/**
+* Set base fonts
+*/
+button,
+input,
+textarea,
+body {
+  @include fluid-font-size($body-font-sizes);
+    font-family: $font-main;
+    background-color: $background-color-purple;
+    color: $color-dark;
+    font-weight: $font-weight-regular;
 }
 
-
+/**
+ * Normalise
+ */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     margin: 0;
+ }
+ 
+ p {
+     margin: 0;
+     line-height: 1.4;
+ }
+ 
+ a {
+     color: inherit;
+     text-decoration: underline;
+     text-decoration-color: inherit;
+     text-decoration-thickness: 1px;
+     text-underline-offset: 0.3em;
+ 
+     border-radius: 2px;
+     transition: all 0.4s;
+     word-break: break-word;
+ 
+     &:hover {
+         text-decoration-color: transparent;
+     }
+ }
+ 
+ pre {
+     max-width: 100%;
+     word-break: break-all;
+     overflow: auto;
+ }
+ 
+ // Base button reset.
+ button {
+     appearance: none;
+     border-radius: 0;
+     border: 0;
+     padding: 0;
+     margin: 0;
+     color: inherit;
+     font-size: inherit;
+     font-weight: inherit;
+     background-color: transparent;
+     transition: all 0.3s, border 0s;
+     cursor: pointer;
+ }
+ 
+ .hasModal {
+     overflow: hidden;
+ }
